@@ -2,7 +2,7 @@ import React from 'react';
 import s from './ImageGalleryItem.module.css';
 import PropTypes from 'prop-types';
 
-const ImageGalleryItem = ({ id, tags, previewURL, largeImageURL, onClick }) => {
+const ImageGalleryItem = ({ tags, previewURL, largeImageURL, onClick }) => {
   return (
     <li className={s.ImageGalleryItem}>
       <img
@@ -17,8 +17,6 @@ const ImageGalleryItem = ({ id, tags, previewURL, largeImageURL, onClick }) => {
   );
 };
 ImageGalleryItem.propTypes = {
-  key: PropTypes.string.isRequired,
-  id: PropTypes.string.isRequired,
   tags: PropTypes.string.isRequired,
   previewURL: PropTypes.string.isRequired,
   largeImageURL: PropTypes.string.isRequired,
