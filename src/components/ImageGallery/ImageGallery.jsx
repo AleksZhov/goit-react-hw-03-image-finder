@@ -5,11 +5,7 @@ import PropTypes from 'prop-types';
 import s from './ImageGallery.module.css';
 
 class ImageGallery extends Component {
-  state = {
-    queryPage: 1,
-    totalPages: 0,
-    returnedImageArray: [],
-  };
+  state = {};
 
   render() {
     return (

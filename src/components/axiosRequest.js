@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+
 const axios = require('axios').default;
 
 async function axiosRequest(searchValue, page) {
@@ -12,8 +12,5 @@ async function axiosRequest(searchValue, page) {
     console.log(error);
   }
 }
-axiosRequest.propTypes = {
-  searchValue: PropTypes.string.isRequired,
-  page: PropTypes.number.isRequired,
-};
+
 export default axiosRequest;

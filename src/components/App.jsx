@@ -21,6 +21,10 @@ export class App extends Component {
   };
 
   searchValueUpdate = value => {
+    if (value === this.state.searchValue) {
+      alert(`The ${value} was already requested. Please type another request`);
+      return;
+    }
     this.setState({ searchValue: value, queryPage: 1, totalHits: 0 });
   };
 
